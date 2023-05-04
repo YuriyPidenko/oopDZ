@@ -28,7 +28,6 @@ public class Peasant extends Unit {
             
         }else{
             readiness = true;
-            
         }
     }
 }

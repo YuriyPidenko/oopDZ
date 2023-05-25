@@ -13,7 +13,7 @@ public class Peasant extends Unit {
 
     @Override
     public String toString() {
-        return "Крестьянин";
+        return "Пизант";
     }
 
 
@@ -24,12 +24,5 @@ public class Peasant extends Unit {
 
     @Override
     public void step(ArrayList<Unit> enemy) {
-        if (readiness) {
-            
-        }else{
-            readiness = true;
-            
-        }
     }
-
 }

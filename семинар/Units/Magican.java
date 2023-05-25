@@ -37,10 +37,9 @@ public abstract class Magican extends Shooter {
     public void step(ArrayList<Unit> enemy) {
         if (!die() && currentMana > 0) {
             for (Unit unit : team) {
-                if (unit.currentHp < unit.maxHp) {
+                if (!unit.die() && unit.currentHp < unit.maxHp) {
                     unit.getDmage(-attack);
                     this.currentMana--;
-                    //System.out.println(this.introduce() + " лечит " + unit.introduce());
                     return;
                 }
             }

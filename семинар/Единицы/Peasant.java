@@ -24,5 +24,15 @@ public class Peasant extends Unit {
 
     @Override
     public void step(ArrayList<Unit> enemy) {
+<<<<<<< HEAD:семинар/Units/Peasant.java
     }
 }
+=======
+        if (readiness) {
+            
+        }else{
+            readiness = true;
+        }
+    }
+}
+>>>>>>> dcf96e67958f41786d4bb7565e87434f355361a0:семинар/Единицы/Peasant.java
